@@ -8,5 +8,13 @@ function getpdf() {
 }
 
 function setifram(data) {
-	document.getElementById('pdfview').src = data;
+	// document.getElementById('pdfview').src = data;
+	// document.getElementById('blobviwer').innerHTML = data;
+
+	let dataUrl = globalThis.URL.createObjectURL(data)
+	console.log(dataUrl)
+
+	document.getElementById('pdfview').src = dataUrl;
+	document.getElementById('blobviwer').innerHTML = dataUrl;
+
 }
