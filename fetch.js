@@ -8,8 +8,6 @@ function getpdf() {
 }
 
 function setifram(data) {
-	// document.getElementById('pdfview').src = data;
-	// document.getElementById('blobviwer').innerHTML = data;
 
 	let dataUrl = globalThis.URL.createObjectURL(data)
 	console.log(dataUrl)
@@ -18,3 +16,5 @@ function setifram(data) {
 	document.getElementById('blobviwer').innerHTML = dataUrl;
 
 }
+
+
